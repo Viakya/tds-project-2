@@ -5,15 +5,12 @@ answer_schema = {
         "type": "object",
         "properties": {
             "answer": {
-                "oneOf": [
-                    {"type": "number"},
-                    {"type": "string"},
-                    {"type": "boolean"},
-                    {
-                        "type": "object",
-                        "additionalProperties": True
-                    }
-                ]
+                "type": "string",
+                "description": "JSON-encoded value. May represent a number, string, boolean, object, or base64 URI. Always returned as a string."
+            },
+            "post_url": {
+                "type": "string",
+                "description": "The URL where the final answer has been submitted."
             }
         },
         "required": ["answer"],

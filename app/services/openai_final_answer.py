@@ -24,15 +24,16 @@ You receive:
 
 Your job:
 1. Understand from HTML & processing output whether the quiz expects a single value or multiple.
-2. If ONE final value is expected, output EXACTLY that value as JSON field "answer".
-3. If MULTIPLE outputs are expected, return an OBJECT nested inside "answer".
-4. Allowed types for answer:
+2. Find a URL where to POST the final answer , it is in the quiz url.
+3. If ONE final value is expected, output EXACTLY that value as JSON field "answer".
+4. If MULTIPLE outputs are expected, return an OBJECT nested inside "answer".
+5. Allowed types for answer:
    - number
    - string
    - boolean
    - object (for multi-output)
-5. DO NOT return arrays at top level.
-6. Follow STRICT JSON schema.
+6. DO NOT return arrays at top level.
+7. Follow STRICT JSON schema.
 
 --- QUIZ URL ---
 {quiz_url}
